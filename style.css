@@ -118,3 +118,37 @@ nav{
     border-radius: 50%;
     object-fit: cover;
 }
+
+/* ===========================
+   Hero Content
+=========================== */
+
+.hero-left h1{
+    font-size: 55px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-left h1 span{
+    color: #0077ff;
+}
+
+.hero-left h3{
+    font-size: 28px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-left p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 35px;
+    max-width: 600px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
