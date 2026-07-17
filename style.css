@@ -19,3 +19,27 @@ body{
     background: #f8f9fa;
     color: #222;
 }
+
+/* ===========================
+   Navbar
+=========================== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+.logo h2{
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
