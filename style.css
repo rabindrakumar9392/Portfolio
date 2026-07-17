@@ -43,3 +43,23 @@ nav{
     list-style: none;
     gap: 35px;
 }
+
+/* ===========================
+   Navigation Links
+=========================== */
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #0077ff;
+}
