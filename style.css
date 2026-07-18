@@ -152,3 +152,51 @@ nav{
     gap: 20px;
     flex-wrap: wrap;
 }
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 60px;
+}
+
+.about-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-left img{
+    width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.about-right{
+    flex: 1;
+}
+
+.about-right h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-right p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-info{
+    margin-top: 25px;
+}
+
+.about-info p{
+    margin-bottom: 10px;
+}
