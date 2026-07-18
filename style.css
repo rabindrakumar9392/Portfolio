@@ -774,3 +774,13 @@ footer p{
     }
 
 }
+
+/* Active Navbar Link */
+
+nav ul li a.active{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
