@@ -83,6 +83,126 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+
+        // ==========================================
+// Scroll To Top Button
+// ==========================================
+
+// Create Button
+const scrollBtn = document.createElement("button");
+
+scrollBtn.innerHTML = "↑";
+
+scrollBtn.id = "scrollTopBtn";
+
+document.body.appendChild(scrollBtn);
+
+// Show / Hide Button
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        scrollBtn.style.display = "block";
+
+    } else {
+
+        scrollBtn.style.display = "none";
+
+    }
+
+});
+
+// Scroll to Top
+scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+// ==========================================
+// Reveal Animation
+// ==========================================
+
+const revealElements = document.querySelectorAll(
+    ".about, .skills, .education, .projects, .contact"
+);
+
+function revealOnScroll() {
+
+    const windowHeight = window.innerHeight;
+
+    revealElements.forEach((element) => {
+
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+// ==========================================
+// Contact Form Validation
+// ==========================================
+
+const form = document.querySelector("form");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const inputs = form.querySelectorAll("input, textarea");
+
+        let valid = true;
+
+        inputs.forEach((input) => {
+
+            if (input.value.trim() === "") {
+
+                valid = false;
+
+                input.style.border = "2px solid red";
+
+            } else {
+
+                input.style.border = "1px solid #ddd";
+
+            }
+
+        });
+
+        if (valid) {
+
+            alert("Message Sent Successfully!");
+
+            form.reset();
+
+        } else {
+
+            alert("Please fill all fields.");
+
+        }
+
+    });
+
+}
+
     });
 
 });
