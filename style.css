@@ -923,3 +923,37 @@ nav ul li a.active{
     }
 
 }
+
+/*=========================================
+ Social Links
+=========================================*/
+
+.social-links{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-3px);
+
+    color:var(--secondary);
+
+}
