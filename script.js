@@ -206,3 +206,25 @@ if (form) {
     });
 
 });
+
+// ==========================================
+// Dark / Light Theme
+// ==========================================
+
+const themeBtn = document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+
+        themeBtn.innerHTML = "☀️";
+
+    }else{
+
+        themeBtn.innerHTML = "🌙";
+
+    }
+
+});
