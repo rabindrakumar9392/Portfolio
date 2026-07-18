@@ -228,3 +228,54 @@ themeBtn.addEventListener("click", () => {
     }
 
 });
+
+
+// ==========================================
+// Typing Animation
+// ==========================================
+
+const roles = [
+    "Java Developer",
+    "Frontend Developer",
+    "Problem Solver",
+    "B.Tech CSE Student"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typing = document.getElementById("typing");
+
+function typeEffect() {
+
+    if (!typing) return;
+
+    const currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+
+        typing.textContent = currentRole.substring(0, charIndex++);
+    } else {
+
+        typing.textContent = currentRole.substring(0, charIndex--);
+    }
+
+    let speed = isDeleting ? 60 : 120;
+
+    if (!isDeleting && charIndex === currentRole.length + 1) {
+
+        speed = 1500;
+        isDeleting = true;
+
+    } else if (isDeleting && charIndex === 0) {
+
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
