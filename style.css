@@ -854,3 +854,46 @@ nav ul li a.active{
     transform:translateY(0);
 
 }
+
+/* Theme Toggle Button */
+
+.theme-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    background:var(--primary);
+    color:#fff;
+    transition:.3s;
+    margin-left:15px;
+}
+
+.theme-btn:hover{
+    transform:rotate(180deg);
+}
+
+/* Dark Theme */
+
+.dark-theme{
+    background:#0f172a;
+    color:#ffffff;
+}
+
+.dark-theme nav{
+    background:#1e293b;
+}
+
+.dark-theme .skill-card,
+.dark-theme .project-card,
+.dark-theme .education-card,
+.dark-theme .certificate-card,
+.dark-theme .about-info div{
+    background:#1e293b;
+    color:#ffffff;
+}
+
+.dark-theme footer{
+    background:#020617;
+}
