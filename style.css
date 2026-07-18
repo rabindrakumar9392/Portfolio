@@ -957,3 +957,50 @@ nav ul li a.active{
     color:var(--secondary);
 
 }
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer-container{
+
+    text-align:center;
+
+}
+
+.footer-container h2{
+
+    margin-bottom:15px;
+
+}
+
+.footer-links,
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin:25px 0;
+
+}
+
+.footer-links a,
+.footer-social a{
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover,
+.footer-social a:hover{
+
+    color:#60a5fa;
+
+}
