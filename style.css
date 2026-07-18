@@ -897,3 +897,29 @@ nav ul li a.active{
 .dark-theme footer{
     background:#020617;
 }
+
+/* Typing Animation */
+
+#typing{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    border-right:3px solid var(--primary);
+
+    padding-right:5px;
+
+    animation:blink .7s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        border-color:transparent;
+
+    }
+
+}
