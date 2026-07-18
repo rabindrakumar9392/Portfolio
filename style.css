@@ -1,202 +1,279 @@
-/* Portfolio Styles */
+/*=========================================
+  GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* ===========================
-   CSS Reset
-=========================== */
+/*=========================================
+  CSS VARIABLES
+=========================================*/
+:root{
+
+    --primary:#2563eb;
+    --secondary:#1e293b;
+    --white:#ffffff;
+    --light:#f8fafc;
+    --gray:#64748b;
+    --dark:#0f172a;
+    --border:#e2e8f0;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/*=========================================
+  RESET
+=========================================*/
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* ===========================
-   Body
-=========================== */
+html{
+
+    scroll-behavior:smooth;
+
+}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8f9fa;
-    color: #222;
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--light);
+
+    color:var(--secondary);
+
+    line-height:1.7;
+
 }
 
-/* ===========================
-   Navbar
-=========================== */
+/*=========================================
+  GLOBAL
+=========================================*/
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: white;
+img{
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    width:100%;
 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display:block;
+
 }
 
-.logo h2{
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+a{
+
+    text-decoration:none;
+
 }
 
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap: 35px;
+ul{
+
+    list-style:none;
+
 }
 
-/* ===========================
-   Navigation Links
-=========================== */
+section{
 
-.nav-links li{
-    list-style: none;
+    padding:90px 10%;
+
 }
 
-.nav-links li a{
-    text-decoration: none;
-    color: #222;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.3s;
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:60px;
+
+    color:var(--secondary);
+
 }
 
-.nav-links li a:hover{
-    color: #0077ff;
-}
-
-/* ===========================
-   Resume Button
-=========================== */
+/*=========================================
+  BUTTON
+=========================================*/
 
 .btn{
-    text-decoration: none;
-    background: #0077ff;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
 }
 
 .btn:hover{
-    background: #005fcc;
-    transform: translateY(-3px);
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow);
+
 }
 
-/* ===========================
-   Hero Section
-=========================== */
+/*=========================================
+  NAVBAR
+=========================================*/
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+nav{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 10%;
+
+    box-shadow:var(--shadow);
+
+}
+
+.logo a{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--secondary);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    color:var(--secondary);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+/*=========================================
+  HERO
+=========================================*/
 
 .hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 8%;
-    min-height: 90vh;
-    gap: 50px;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
 }
 
 .hero-left{
-    flex: 1;
+
+    flex:1;
+
 }
 
 .hero-right{
-    flex: 1;
-    display: flex;
-    justify-content: center;
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
 }
 
 .hero-right img{
-    width: 350px;
-    border-radius: 50%;
-    object-fit: cover;
+
+    width:420px;
+
+    border-radius:50%;
+
+    box-shadow:var(--shadow);
+
 }
 
-/* ===========================
-   Hero Content
-=========================== */
+.hero h4{
 
-.hero-left h1{
-    font-size: 55px;
-    margin-bottom: 15px;
-    line-height: 1.2;
+    font-size:22px;
+
+    color:var(--primary);
+
 }
 
-.hero-left h1 span{
-    color: #0077ff;
+.hero h1{
+
+    font-size:65px;
+
+    margin:10px 0;
+
 }
 
-.hero-left h3{
-    font-size: 28px;
-    color: #555;
-    margin-bottom: 20px;
+.hero h1 span{
+
+    color:var(--primary);
+
 }
 
-.hero-left p{
-    font-size: 18px;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 35px;
-    max-width: 600px;
+.hero h2{
+
+    font-size:30px;
+
+    color:var(--gray);
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin-bottom:35px;
+
 }
 
 .hero-buttons{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
 
-/* ===========================
-   About Section
-=========================== */
+    display:flex;
 
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 8%;
-    gap: 60px;
-}
+    gap:20px;
 
-.about-left{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+    flex-wrap:wrap;
 
-.about-left img{
-    width: 350px;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.about-right{
-    flex: 1;
-}
-
-.about-right h2{
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.about-right p{
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.about-info{
-    margin-top: 25px;
-}
-
-.about-info p{
-    margin-bottom: 10px;
 }
