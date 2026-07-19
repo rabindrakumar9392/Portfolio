@@ -11,5 +11,10 @@ Welcome to my GitHub Portfolio.
 - 📁 certificates
 - 📁 contact
 
+  ## 📄 Resume
+
+[Download My Resume]()
+
 ---
 ⭐ Thanks for visiting my portfolio.
+
