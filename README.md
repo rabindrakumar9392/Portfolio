@@ -13,7 +13,7 @@ Welcome to my GitHub Portfolio.
 
   ## 📄 Resume
 
-[Download My Resume]()
+[Download My Resume](https://github.com/rabindrakumar9392/Portfolio/blob/main/assets/resume/resume/Rabindra_Kumar_Resume.pdf.pdf)
 
 ---
 ⭐ Thanks for visiting my portfolio.
